@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #999999;
+}
+#animeList {
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  width: 80%;
+  height: 80%;
+  background-color: #000000;
+  border: 3px solid #808080;
+  border-radius: 25px 0 25px 0;
+  z-index: -1;
+}
+#Search {
+  display: none;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  width: 80%;
+  height: 800px;
+  background-color: #000000;
+  border: 3px solid #808080;
+  border-radius: 25px 0 25px 0;
+  z-index: -1;
+}
+
+/*Static Menu*/
+.staticMenuUp {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #404040;
+}
+/*Username*/
+#Username {
+  position: fixed;
+  top: 30px;
+  left: 100px;
+}
+/*Username hover*/
+#Username:hover {
+  cursor: pointer;
+  position: fixed;
+  color: #808080;
+  top: 30px;
+  left: 100px;
+}
+/*Profile IMG*/
+.ProfileImg {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+/*BUTTONS*/
+/*Logout Button*/
+#Logout {
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  border: 2px solid #808080;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px 0px 20px 0px;
+  position: fixed;
+  margin-right: 10px;
+  right: 0;
+  top: 20px;
+  color: aliceblue;
+}
+/*Logout Button hover*/
+#Logout:hover {
+  cursor: pointer;
+  background-color: #808080;
+  border: 2px solid #808080;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px 0px 20px 0px;
+  position: fixed;
+  right: 0;
+  color: #000000;
+}
+/*Up Button*/
+.upButton {
+  position: fixed;
+  background-color: #202020;
+  border: 2px solid #808080;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  bottom: 0;
+  right: 0;
+  margin: 1%;
+  color: aliceblue;
+}
+/*Up Hover*/
+.upButton:hover {
+  cursor: pointer;
+  background-color: #808080;
+  color: #000000;
+  position: fixed;
+  border: 2px solid #808080;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  bottom: 0;
+  right: 0;
+  margin: 1%;
+}
+/*Show chat Button*/
+.showChat {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 150px;
+  height: 60px;
+  width: 60px;
+  background-color: #000000;
+  color: #f9f9f9;
+  border: 2px solid #808080;
+  border-radius: 30px 0 0 30px;
+}
+.showChat:hover {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: #808080;
+  color: #000000;
+}
+/*PROFILE*/
+#profile {
+  position: fixed;
+  top: 140px;
+  left: 5%;
+  display: none;
+  width: 80%;
+  height: 80%;
+  background-color: #000000;
+  border: 3px solid #808080;
+  border-radius: 25px 0 25px 0;
+  z-index: 0;
+}
+#profile h1 {
+  margin: 30px 0 0 30px;
+  color: #c0c0c0;
+}
+#profile div {
+  color: #bbbbbb;
+  margin: 10px 10px 10px 30px;
+}
+#profile input {
+  margin: 30px 0 30px 60px;
+
+  width: 200px;
+  height: 30px;
+}
+#profile img {
+  margin: 40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+}
+#saveButton {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #202020;
+  border: 3px solid #808080;
+  bottom: 20px;
+  right: 20px;
+}
+#saveButton:hover {
+  cursor: pointer;
+  background-color: #00ff00;
+}
+.closeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #bbbbbb;
+  color: #000000;
+  border: 3px solid #888888;
+  width: 40px;
+  height: 40px;
+}
+.closeButton:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+}
+/*ADD STUFF*/
+.addAnime {
+  display: none;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  width: 80%;
+  height: 800px;
+  background-color: #000000;
+  border: 3px solid #808080;
+  border-radius: 25px 0 25px 0;
+  z-index: -1;
+}
+.addAnime > h1 {
+  margin: 20px 20px 0 25px;
+  color: #808080;
+}
+.addAnime > form {
+  margin: 40px;
+  padding: 20px;
+}
+#add > input,
+select {
+  margin: 10px;
+  height: 40px;
+  width: 300px;
+}
+#addButton {
+  margin: 10px;
+  height: 40px;
+  width: 300px;
+}
+/*YOUR LIST*/
+.toAdd {
+  position: absolute;
+  right: 15px;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+}
+.toAdd:hover {
+  cursor: pointer;
+}
+#searchButton {
+  position: absolute;
+  right: 130px;
+  width: 100px;
+  height: 40px;
+}
+#yourList {
+  color: #404040;
+  margin: 20px 0 0 20px;
+}
+.Table {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  background-color: #888888;
+  width: 90%;
+}
+.Table {
+  color: #ffffff;
+  border-collapse: collapse;
+}
+th,
+td {
+  color: #ffffff;
+  text-align: center;
+  border: 2px solid #444444;
+  height: 50px;
+  width: 12%;
+}
+input {
+  color: #000000;
+  text-align: center;
+  border: 2px solid #444444;
+  height: 50px;
+  width: 98%;
+}
+.deleteButton {
+  background-color: #ff0000;
+  width: 90%;
+  height: 90%;
+  color: #000000;
+}
+.deleteButton:hover {
+  cursor: pointer;
+  background-color: #880000;
+}
+.confButton {
+  background-color: #00ff00;
+  width: 90%;
+  height: 90%;
+  color: #000000;
+}
+.confButton:hover {
+  cursor: pointer;
+  background-color: #008800;
+}

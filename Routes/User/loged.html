@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Routes/User/style.css" />
+    <title>Loged</title>
+  </head>
+  <body onload="userData()">
+    <div class="staticMenuUp">
+      <img src="Routes/User/DefImg.png" alt="" class="ProfileImg" />
+      <h1 id="Username">Username</h1>
+      <button id="Logout">Log out</button>
+    </div>
+    <button class="showChat">CHAT</button>
+    <!--Add window-->
+    <div id="addAnime" class="addAnime">
+      <h1>Add</h1>
+      <form action="" id="add">
+        <input type="text" placeholder="Title" id="title" />
+        <br />
+        <select name="rate" id="rate">
+          <option value="" selected disabled hidden>Rate</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Star</option>
+          <option value="3">3 Star</option>
+          <option value="4">4 Star</option>
+          <option value="5">5 Star</option></select
+        ><br />
+        <select name="genres" id="gen">
+          <option value="" selected disabled hidden>Genres</option>
+          <option value="Iyashikei">Iyashikei</option>
+          <option value="Kodomomuke">Kodomomuke</option>
+          <option value="Slice of Life">Slice of Life</option>
+          <option value="Mecha">Mecha</option>
+          <option value="Isekai">Isekai</option>
+          <option value="Harem">Harem</option>
+          <option value="Ecchi">Ecchi</option>
+          <option value="Josei">Josei</option>
+          <option value="Seinen">Seinen</option>
+          <option value="Shoujo">Shoujo</option>
+          <option value="Shonen">Shonen</option></select
+        ><br />
+        <input type="text" placeholder="MyAnime Link" id="link" />
+        <br />
+        <input type="text" placeholder="Season" id="season" />
+        <br />
+        <input type="text" placeholder="Episod" id="ep" />
+        <br />
+        <button id="addButton" onclick="hideAdd()">Add</button>
+      </form>
+      <button onclick="hideAdd()" id="AddClose" class="closeButton">X</button>
+    </div>
+    <!--List window-->
+    <div id="animeList" onload="getallanime()" style="overflow: auto">
+      <h1 id="yourList">
+        Your List <button class="toAdd" onclick="showAdd()">Add</button>
+      </h1>
+      <table id="table" class="Table">
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Rate</th>
+          <th>Link</th>
+          <th>Season</th>
+          <th>Ep</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    <!--Profil window-->
+    <div id="profile">
+      <h1>Profile</h1>
+      <button id="profileClose" class="closeButton">X</button>
+      <form id="tempForm">
+        <label for="image"><b>Profile picture</b></label
+        ><br />
+        <img src="Routes/User/DefImg.png" alt="" /><br />
+        <div><b>Name:</b></div>
+        <input type="text" id="name" /><br />
+        <div><b>E-mail:</b></div>
+        <input type="email" id="email" /><br />
+        <div><b>Password:</b></div>
+        <input type="password" id="password" /><br />
+        <button id="saveButton">Save</button>
+      </form>
+    </div>
+    <button id="upButton" class="upButton">UP</button>
+    <script src="Routes/User/script.js"></script>
+    <script src="Routes/User/show.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+      integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
